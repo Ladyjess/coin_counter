@@ -1,0 +1,21 @@
+<h1> Coin Counter </h1>
+
+<form action="/coin" method="post">
+
+  <div class="form-group">
+    <label id="coin"> Enter amount:  </label>
+    <input id="coin" name="coin" type="text">
+
+  </div>
+
+  <button type="submit" class="btn btn-sm btn-danger">Go!</button>
+
+  </form>
+
+  <% if @amount %>
+    <p><ul>
+      <li> <%= @amount %>
+
+      </li></p>
+    </ul>
+    <% end %>
